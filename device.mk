@@ -79,9 +79,10 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# RIL
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat
+# Protobuf
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so
 
 # Sensor
 PRODUCT_PACKAGES += \
