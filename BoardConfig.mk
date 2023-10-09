@@ -57,5 +57,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Security
 VENDOR_SECURITY_PATCH := 2021-08-01
 
+# Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/violet/BoardConfigVendor.mk
