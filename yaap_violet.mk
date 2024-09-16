@@ -8,16 +8,14 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
-SUPERIOR_OFFICIAL := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_MATLOG := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
-USE_MOTO_CALCULATOR := true
+# Inherit some common Yaap stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+
+# Bootanimation
+scr_resolution := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_violet
+PRODUCT_NAME := yaap_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro

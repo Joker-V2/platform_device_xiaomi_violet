@@ -35,6 +35,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Board
+TARGET_BOARD_PLATFORM := sm6150
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
@@ -325,6 +328,8 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.sm6150-libperfmgr
 

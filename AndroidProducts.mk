@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_violet.mk
+    $(LOCAL_DIR)/yaap_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_violet-ap1a-eng \
-    superior_violet-ap1a-userdebug \
-    superior_violet-ap1a-user
+    yaap_violet-ap1a-eng \
+    yaap_violet-ap1a-userdebug \
+    yaap_violet-ap1a-user
